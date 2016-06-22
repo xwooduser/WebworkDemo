@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/cos-multipart.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/mail.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ognl.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/oscore.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/pell-multipart.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/velocity-dep.jar"/>
+	<classpathentry sourcepath="E:/j2ee_s/webwork-b/xwork-1.0.5/src/java" kind="lib" path="webapp/WEB-INF/lib/xwork.jar"/>
+	<classpathentry sourcepath="E:/j2ee_s/webwork-b/webwork-2.1.7/src/java" kind="lib" path="webapp/WEB-INF/lib/webwork-2.1.7.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/servlet-api.jar"/>
+	<classpathentry kind="output" path="webapp/WEB-INF/classes"/>
+</classpath>

@@ -1,0 +1,11 @@
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.0//EN" "http://www.opensymphony.com/xwork/xwork-1.0.dtd">
+
+<xwork>
+    <package name="upload" extends="default" namespace="/upload">
+        <action name="fileUpload" class="com.skyon.demo.upload.FileUploadAction" >
+			<param name="directory">C:\temp\</param>
+			<result name="success" type="dispatcher">/upload/uploadSuccess.jsp</result>
+			<interceptor-ref name="fileUploadStack"/>
+		</action>
+    </package>
+</xwork>

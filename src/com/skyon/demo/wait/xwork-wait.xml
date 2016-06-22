@@ -1,0 +1,10 @@
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.0//EN" "http://www.opensymphony.com/xwork/xwork-1.0.dtd">
+<xwork>
+    <package name="wait" extends="default" namespace="/wait">
+        <action name="wait" class="com.skyon.demo.wait.InvocationWaitAction">
+			<result name="wait" type="dispatcher">/wait/wait.jsp</result>
+			<result name="success" type="dispatcher">/wait/waitSuccess.jsp</result>
+			<interceptor-ref name="executeAndWaitStack"/>
+		</action>
+    </package>
+</xwork>

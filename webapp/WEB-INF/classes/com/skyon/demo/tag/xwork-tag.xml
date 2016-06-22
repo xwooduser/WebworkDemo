@@ -1,0 +1,10 @@
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.0//EN" "http://www.opensymphony.com/xwork/xwork-1.0.dtd">
+
+<xwork>
+    <package name="tag" extends="default" namespace="/tag">
+        <action name="tag" class="com.skyon.demo.tag.TagAction" >
+			<result name="success" type="dispatcher">/tag/tagSuccess.jsp</result>
+			<interceptor-ref name="params"/>
+		</action>
+    </package>
+</xwork>

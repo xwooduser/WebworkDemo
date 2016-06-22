@@ -1,0 +1,51 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="user.name">
+		<field-validator type="requiredstring">
+			<message>用户名不能为空</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">3</param>
+			<param name="maxLength">6</param>
+			<message>长度必须在${minLength}和${maxLength}之间，当前的长度为${user.name.length()}</message>
+		</field-validator>
+	</field>
+	
+	<field name="user.password">
+		<field-validator type="requiredstring">
+			<message>密码不能为空</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">4</param>
+			<param name="maxLength">12</param>
+			<message>长度必须在${minLength}和${maxLength}之间，当前的长度为${user.password.length()}</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">user.password == user.passwordConfirm</param>
+			<message>两次输入的密码的正确</message>
+		</field-validator>
+	</field>
+	
+	<field name="user.startDate">
+		<field-validator type="date">
+			<message>必须为日期类型</message>
+		</field-validator>
+	</field>
+	
+	<field name="user.endDate">
+		<field-validator type="date">
+			<message>必须为日期类型</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">user.endDate > user.startDate</param>
+			<message>签约日期 必须要大于 合同结束日期</message>
+		</field-validator>
+	</field>
+	
+	<field name="user.email">
+		<field-validator type="email">
+			<message>必须为合法的Email格式</message>
+		</field-validator>
+	</field>
+</validators>

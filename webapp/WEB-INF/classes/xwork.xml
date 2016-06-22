@@ -1,0 +1,12 @@
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.0//EN" "http://www.opensymphony.com/xwork/xwork-1.0.dtd">
+
+<xwork>
+	<include file="webwork-default.xml"></include>
+    <package name="default" extends="webwork-default">
+    </package>
+	<include file="com/skyon/demo/register/xwork-register.xml"></include>
+	<include file="com/skyon/demo/tag/xwork-tag.xml"></include>
+	<include file="com/skyon/demo/validator/xwork-validator.xml"></include>
+	<include file="com/skyon/demo/upload/xwork-upload.xml"></include>
+	<include file="com/skyon/demo/wait/xwork-wait.xml"></include>
+</xwork>
